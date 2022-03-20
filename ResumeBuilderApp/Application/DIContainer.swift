@@ -23,6 +23,7 @@ extension DIContainer: FlowCoordinatorDependencies {
         guard let vc = storyBoard.instantiateViewController(identifier: "MainViewController") as? MainViewController else { return  UIViewController()}
         let repository = DefaultResumeRepository(service: dependencies.localDataService)
         vc.viewModel = ChooseProfileViewModel(repository: repository, closures: closures)
+        vc.navigationItem.title = "Choose Profile"
         return vc
     }
     
@@ -43,42 +44,5 @@ extension DIContainer: FlowCoordinatorDependencies {
         vc.viewModel = PreviewViewModel(resume: resume)
         vc.navigationItem.title = "Preview Resume"
         return vc
-    }
-    
-    
-    
-}
-
-
-public protocol LocalDataService {
-    func createData(input: Resume, completion: @escaping ()->Void)
-    func fetchData(completion: @escaping ([Resume])->Void)
-    func updateData(index: Int, input: Resume, completion: @escaping ()->Void)
-    func deleteData(index: Int, completion: @escaping ()->Void)
-}
-
-protocol ResumeRepository {
-    func createData(input: Resume, completion: @escaping ()->Void)
-    func fetchData(completion: @escaping ([Resume])->Void)
-    func updateData(index: Int, input: Resume, completion: @escaping ()->Void)
-    func deleteData(index: Int, completion: @escaping ()->Void)
-}
-
-struct DefaultResumeRepository: ResumeRepository {
-    let service: LocalDataService
-    public func createData(input: Resume, completion: @escaping ()->Void) {
-        service.createData(input: input, completion: completion)
-    }
-    
-    public func fetchData(completion: @escaping ([Resume])->Void) {
-        service.fetchData(completion: completion)
-    }
-    
-    public func updateData(index: Int, input: Resume, completion: @escaping () -> Void) {
-        service.updateData(index: index, input: input, completion: completion)
-    }
-    
-    public func deleteData(index: Int, completion: @escaping () -> Void) {
-        service.deleteData(index: index, completion: completion)
-    }
+    }    
 }

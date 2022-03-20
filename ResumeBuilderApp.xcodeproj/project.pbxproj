@@ -30,6 +30,8 @@
 		4F4D666B27E74775006A0F46 /* String+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D666A27E74775006A0F46 /* String+Extention.swift */; };
 		4F4D667127E747FC006A0F46 /* UITableViewCell + Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D667027E747FC006A0F46 /* UITableViewCell + Extention.swift */; };
 		4F4D667F27E74822006A0F46 /* UIViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D667E27E74822006A0F46 /* UIViewController+Extention.swift */; };
+		4F4D668527E74A7C006A0F46 /* LocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D668427E74A7C006A0F46 /* LocalDataService.swift */; };
+		4F4D668D27E74AA1006A0F46 /* ResumeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D668C27E74AA1006A0F46 /* ResumeRepository.swift */; };
 		4FE7BC0C27D71D1E0021C8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC0B27D71D1E0021C8CE /* AppDelegate.swift */; };
 		4FE7BC1027D71D1E0021C8CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC0F27D71D1E0021C8CE /* MainViewController.swift */; };
 		4FE7BC1327D71D1E0021C8CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BC1127D71D1E0021C8CE /* Main.storyboard */; };
@@ -110,6 +112,8 @@
 		4F4D666A27E74775006A0F46 /* String+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extention.swift"; sourceTree = "<group>"; };
 		4F4D667027E747FC006A0F46 /* UITableViewCell + Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell + Extention.swift"; sourceTree = "<group>"; };
 		4F4D667E27E74822006A0F46 /* UIViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extention.swift"; sourceTree = "<group>"; };
+		4F4D668427E74A7C006A0F46 /* LocalDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataService.swift; sourceTree = "<group>"; };
+		4F4D668C27E74AA1006A0F46 /* ResumeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeRepository.swift; sourceTree = "<group>"; };
 		4FE7BC0827D71D1E0021C8CE /* ResumeBuilderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeBuilderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE7BC0B27D71D1E0021C8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FE7BC0F27D71D1E0021C8CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -255,6 +259,14 @@
 			path = common;
 			sourceTree = "<group>";
 		};
+		4F4D668327E749AA006A0F46 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4F4D668C27E74AA1006A0F46 /* ResumeRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		4FE7BBFF27D71D1E0021C8CE = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +290,7 @@
 		4FE7BC0A27D71D1E0021C8CE /* ResumeBuilderApp */ = {
 			isa = PBXGroup;
 			children = (
+				4F4D668327E749AA006A0F46 /* Repository */,
 				4F4D666F27E747AA006A0F46 /* common */,
 				4F4D65D927DBC160006A0F46 /* Application */,
 				4FE7BD1F27DB3EE20021C8CE /* CoreData */,
@@ -415,6 +428,7 @@
 		4FE7BD1F27DB3EE20021C8CE /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				4F4D668427E74A7C006A0F46 /* LocalDataService.swift */,
 				4FE7BD2027DB3F0C0021C8CE /* CoreDataManager.swift */,
 			);
 			path = CoreData;
@@ -583,11 +597,13 @@
 				4FE7BC1627D71D1E0021C8CE /* ResumeBuilderApp.xcdatamodeld in Sources */,
 				4F4D660927DC69C3006A0F46 /* ExperienceTableViewCell.swift in Sources */,
 				4F4D663027E2470B006A0F46 /* ChooseProfileViewModel.swift in Sources */,
+				4F4D668527E74A7C006A0F46 /* LocalDataService.swift in Sources */,
 				4F4D665227E50F89006A0F46 /* EductionView.swift in Sources */,
 				4FE7BC6F27D87BCF0021C8CE /* ProfileViewController.swift in Sources */,
 				4FE7BC6427D7C7400021C8CE /* UIView+Extentions.swift in Sources */,
 				4FE7BC5F27D7C6780021C8CE /* LabelWithTextView.swift in Sources */,
 				4F4D663E27E33F93006A0F46 /* UIImage+Extention.swift in Sources */,
+				4F4D668D27E74AA1006A0F46 /* ResumeRepository.swift in Sources */,
 				4F4D662127E2288B006A0F46 /* PreviewTableViewCell.swift in Sources */,
 				4F4D65E527DBC210006A0F46 /* MainFlowCoordinator.swift in Sources */,
 				4FE7BD1527DA308F0021C8CE /* PersonalDetailsCellViewModel.swift in Sources */,

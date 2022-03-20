@@ -8,6 +8,10 @@
 import UIKit
 import CoreData
 
+
+//Can handle saving of data usong core data or through API
+//for demo purpose and of limited understanding in relationship Core data I have handle using local cache
+
 public class CoreDataManager: LocalDataService {
     static let shareInstance = CoreDataManager()
     private var resumes: [Resume] = []
@@ -30,33 +34,4 @@ public class CoreDataManager: LocalDataService {
         resumes.remove(at: index)
         completion()
     }
-    
-    
-    
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        
-//        func saveImage(data: Data) {
-//            let imageInstance = Image(context: context)
-//            imageInstance.img = data
-//                
-//            do {
-//                try context.save()
-//                print("Image is saved")
-//            } catch {
-//                print(error.localizedDescription)
-//            }
-//        }
-//        
-//        func fetchImage() -> [Image] {
-//            var fetchingImage = [Image]()
-//            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Image")
-//            
-//            do {
-//                fetchingImage = try context.fetch(fetchRequest) as! [Image]
-//            } catch {
-//                print("Error while fetching the image")
-//            }
-//            
-//            return fetchingImage
-//        }
 }

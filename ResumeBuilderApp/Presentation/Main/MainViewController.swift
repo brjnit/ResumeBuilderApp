@@ -27,7 +27,7 @@ class MainViewController: UIViewController {
         }
         viewModel.didFail = { [weak self]  in
             DispatchQueue.main.async { [weak self] in
-//                self?.showAlert(message : self?.viewModel.errorMessage ?? "")
+              // self?.showAlert(message : self?.viewModel.errorMessage ?? "")
             }
         }
     }
