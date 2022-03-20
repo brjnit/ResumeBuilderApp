@@ -8,27 +8,28 @@
 import Foundation
 
 protocol ResumeRepository {
-    func createData(input: Resume, completion: @escaping ()->Void)
-    func fetchData(completion: @escaping ([Resume])->Void)
-    func updateData(index: Int, input: Resume, completion: @escaping ()->Void)
-    func deleteData(index: Int, completion: @escaping ()->Void)
+    func save(_ resume: Resume, with completion: @escaping (Result<Void, FileError>)->Void )
+    func load(from fileName: String, with completion: @escaping (Result<Resume,FileError>)->Void )
+    func loadAll(with completion: @escaping (Result<[Resume],FileError>)->Void )
+    func delete(from fileName: String, with completion: @escaping (Result<Void,FileError>)->Void )
 }
 
 struct DefaultResumeRepository: ResumeRepository {
     let service: LocalDataService
-    public func createData(input: Resume, completion: @escaping ()->Void) {
-        service.createData(input: input, completion: completion)
+    
+    func save(_ resume: Resume, with completion: @escaping (Result<Void, FileError>)->Void ) {
+        service.save(resume, with: resume.id.uuidString, with: completion)
     }
     
-    public func fetchData(completion: @escaping ([Resume])->Void) {
-        service.fetchData(completion: completion)
+    func load(from fileName: String, with completion: @escaping (Result<Resume,FileError>)->Void ) {
+        service.load(fileName, type: Resume.self, with: completion)
     }
     
-    public func updateData(index: Int, input: Resume, completion: @escaping () -> Void) {
-        service.updateData(index: index, input: input, completion: completion)
+    func loadAll(with completion: @escaping (Result<[Resume],FileError>)->Void ) {
+        service.loadAll(Resume.self, with: completion)
     }
     
-    public func deleteData(index: Int, completion: @escaping () -> Void) {
-        service.deleteData(index: index, completion: completion)
+    func delete(from fileName: String, with completion: @escaping (Result<Void,FileError>)->Void ) {
+        service.delete(fileName, with: completion)
     }
 }

@@ -7,10 +7,16 @@
 
 import Foundation
 
-
 public protocol LocalDataService {
-    func createData(input: Resume, completion: @escaping ()->Void)
-    func fetchData(completion: @escaping ([Resume])->Void)
-    func updateData(index: Int, input: Resume, completion: @escaping ()->Void)
-    func deleteData(index: Int, completion: @escaping ()->Void)
+    func save<T: Encodable>(_ object: T, with fileName: String, with completion: @escaping (Result<Void, FileError>)->Void)
+    func load<T: Decodable>(_ fileName: String, type: T.Type, with completion: @escaping (Result<T,FileError>)->Void)
+    func loadAll<T: Decodable>(_ type: T.Type, with completion: @escaping (Result<[T],FileError>)->Void )
+    func delete(_ fileName: String, with completion: @escaping (Result<Void,FileError>)->Void)
+}
+
+public enum FileError: Error {
+    case fileNotFound
+    case cannotLoadFile
+    case canNotRemove
+    case parsingError
 }

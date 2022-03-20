@@ -14,7 +14,7 @@ class ChooseProfileViewModel {
     private var resumes: [Resume]?
     
     var didUpdate: (()-> Void)?
-    var didFail: (()-> Void)?
+    var didFail: ((String)-> Void)?
     
     init(repository: ResumeRepository, closures: ChooseProfileClosures) {
         self.repository = repository
@@ -28,14 +28,19 @@ class ChooseProfileViewModel {
     func cellViewModel(for indexPath: IndexPath) -> ProfileCellModel? {
         guard let resumes = resumes, resumes.count > 0 else { return nil }
         let selectedResume = resumes[indexPath.row]
-        return ProfileCellModel(profileImage: selectedResume.profileImage, name: selectedResume.personalDetails?.name, email: selectedResume.personalDetails?.email, contact: selectedResume.personalDetails?.phone, updatedDate: selectedResume.createdDate.formatedDate)
+        return ProfileCellModel(profileImage: selectedResume.profileImage, name: selectedResume.personalDetails?.name, email: selectedResume.personalDetails?.email, contact: selectedResume.personalDetails?.phone, updatedDate: selectedResume.createdAt.formatedDate)
     }
     
     func fetchResumes() {
-        repository.fetchData { [weak self] resumes in
-            self?.resumes = resumes
-            self?.didUpdate?()
-        }
+        repository.loadAll(with: { [weak self]  result in
+            switch result {
+            case .success(let response):
+                    self?.resumes = response
+                    self?.didUpdate?()
+            case .failure(let error):
+                self?.didFail?(error.localizedDescription)
+            }
+        })
     }
     
     func createNewResume() {

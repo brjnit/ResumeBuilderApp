@@ -64,7 +64,7 @@
 		4FE7BD1027DA30740021C8CE /* ObjectiveCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BD0F27DA30740021C8CE /* ObjectiveCellViewModel.swift */; };
 		4FE7BD1527DA308F0021C8CE /* PersonalDetailsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BD1427DA308F0021C8CE /* PersonalDetailsCellViewModel.swift */; };
 		4FE7BD1B27DA310C0021C8CE /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BD1A27DA310C0021C8CE /* Resume.swift */; };
-		4FE7BD2127DB3F0C0021C8CE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BD2027DB3F0C0021C8CE /* CoreDataManager.swift */; };
+		4FE7BD2127DB3F0C0021C8CE /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BD2027DB3F0C0021C8CE /* LocalDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,7 +148,7 @@
 		4FE7BD0F27DA30740021C8CE /* ObjectiveCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveCellViewModel.swift; sourceTree = "<group>"; };
 		4FE7BD1427DA308F0021C8CE /* PersonalDetailsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsCellViewModel.swift; sourceTree = "<group>"; };
 		4FE7BD1A27DA310C0021C8CE /* Resume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resume.swift; sourceTree = "<group>"; };
-		4FE7BD2027DB3F0C0021C8CE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4FE7BD2027DB3F0C0021C8CE /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,7 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				4F4D668427E74A7C006A0F46 /* LocalDataService.swift */,
-				4FE7BD2027DB3F0C0021C8CE /* CoreDataManager.swift */,
+				4FE7BD2027DB3F0C0021C8CE /* LocalDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -600,7 +600,7 @@
 				4F4D65DB27DBC1C0006A0F46 /* Module.swift in Sources */,
 				4FE7BCD427D9DAF40021C8CE /* ObjectiveTableViewCell.swift in Sources */,
 				4FE7BD1B27DA310C0021C8CE /* Resume.swift in Sources */,
-				4FE7BD2127DB3F0C0021C8CE /* CoreDataManager.swift in Sources */,
+				4FE7BD2127DB3F0C0021C8CE /* LocalDataManager.swift in Sources */,
 				4FE7BC8627D87C440021C8CE /* PreviewViewController.swift in Sources */,
 				4FE7BD1027DA30740021C8CE /* ObjectiveCellViewModel.swift in Sources */,
 				4F4D665C27E5168D006A0F46 /* WorkSummaryView.swift in Sources */,

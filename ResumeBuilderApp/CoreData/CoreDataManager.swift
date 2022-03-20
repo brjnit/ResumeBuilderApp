@@ -12,8 +12,8 @@ import CoreData
 //Can handle saving of data usong core data or through API
 //for demo purpose and of limited understanding in relationship Core data I have handle using local cache
 
-public class CoreDataManager: LocalDataService {
-    static let shareInstance = CoreDataManager()
+public class LocalDataManager: LocalDataService {
+    static let shareInstance = LocalDataManager()
     private var resumes: [Resume] = []
     
     public func createData(input: Resume, completion: @escaping ()->Void) {

@@ -403,11 +403,11 @@
                   offsetFromSymbolStart = "25">
                </Location>
                <Location
-                  uuid = "BFB8B9E5-8113-4791-A63C-654A9D4A58F9 - 886ba2b00a820788"
+                  uuid = "BFB8B9E5-8113-4791-A63C-654A9D4A58F9 - c4173ea324655208"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;ResumeBuilderApp.Resume&gt;) -&gt; () in ResumeBuilderApp.ChooseProfileViewModel.fetchResumes() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;ResumeBuilderApp.Resume&gt;, ResumeBuilderApp.FileError&gt;) -&gt; () in ResumeBuilderApp.ChooseProfileViewModel.fetchResumes() -&gt; ()"
                   moduleName = "ResumeBuilderApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/brajeshkumar/Desktop/ResumeBuilderApp/ResumeBuilderApp/Presentation/Main/ChooseProfileViewModel.swift"
@@ -415,25 +415,9 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
                   endingLineNumber = "35"
-                  offsetFromSymbolStart = "115">
+                  offsetFromSymbolStart = "175">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D75C8546-783C-4C41-83AD-359958717FE4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ResumeBuilderApp/Presentation/Main/ChooseProfileViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "fetchResumes()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -552,14 +536,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "80242881-817E-4ACB-B160-6AC60471546F"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ResumeBuilderApp/Presentation/Main/ChooseProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "didSelectRow(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -624,39 +608,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "fetchData(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D566A976-2DE3-4134-8F31-0543C0EE77F0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ResumeBuilderApp/Presentation/Profile/ProfileViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "createNewResume()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B3A9ADD0-3E7E-4C09-A972-838B3D4A488B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ResumeBuilderApp/Presentation/Profile/ProfileViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "createNewResume()"
+            landmarkName = "createData(input:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -674,6 +626,102 @@
             endingLineNumber = "72"
             landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E79A33D-9889-4745-A98D-DAB4E83787F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ResumeBuilderApp/Presentation/Main/ChooseProfileViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchResumes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9E79A33D-9889-4745-A98D-DAB4E83787F6 - c4173ea3246553ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;ResumeBuilderApp.Resume&gt;, ResumeBuilderApp.FileError&gt;) -&gt; () in ResumeBuilderApp.ChooseProfileViewModel.fetchResumes() -&gt; ()"
+                  moduleName = "ResumeBuilderApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brajeshkumar/Desktop/ResumeBuilderApp/ResumeBuilderApp/Presentation/Main/ChooseProfileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "9E79A33D-9889-4745-A98D-DAB4E83787F6 - c4173ea3246553ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;ResumeBuilderApp.Resume&gt;, ResumeBuilderApp.FileError&gt;) -&gt; () in ResumeBuilderApp.ChooseProfileViewModel.fetchResumes() -&gt; ()"
+                  moduleName = "ResumeBuilderApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brajeshkumar/Desktop/ResumeBuilderApp/ResumeBuilderApp/Presentation/Main/ChooseProfileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "247">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF1447B2-7998-47C0-B874-29D472FADACE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ResumeBuilderApp/Presentation/Main/ChooseProfileViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "fetchResumes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CF1447B2-7998-47C0-B874-29D472FADACE - c4173ea3246553ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;ResumeBuilderApp.Resume&gt;, ResumeBuilderApp.FileError&gt;) -&gt; () in ResumeBuilderApp.ChooseProfileViewModel.fetchResumes() -&gt; ()"
+                  moduleName = "ResumeBuilderApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brajeshkumar/Desktop/ResumeBuilderApp/ResumeBuilderApp/Presentation/Main/ChooseProfileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "CF1447B2-7998-47C0-B874-29D472FADACE - c4173ea3246553ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;ResumeBuilderApp.Resume&gt;, ResumeBuilderApp.FileError&gt;) -&gt; () in ResumeBuilderApp.ChooseProfileViewModel.fetchResumes() -&gt; ()"
+                  moduleName = "ResumeBuilderApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brajeshkumar/Desktop/ResumeBuilderApp/ResumeBuilderApp/Presentation/Main/ChooseProfileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "247">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

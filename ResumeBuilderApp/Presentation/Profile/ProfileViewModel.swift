@@ -54,8 +54,11 @@ class ProfileViewModel {
     }
     
     func createNewResume() {
-            repository.createData(input: makeResume()) {[weak self] in
-                self?.didUpdate?()
+        repository.save(makeResume()) { [weak self]  result in
+            switch result {
+            case .success: self?.didUpdate?()
+            case .failure(let error): self?.didFail?(error.localizedDescription)
+            }
         }
     }
     
@@ -72,14 +75,16 @@ class ProfileViewModel {
     }
     
     func makeResume()->Resume {
-        return Resume(profileImage: profileImage,
+        return Resume(id: UUID(),
+                      profileImage: profileImage,
                       personalDetails: personalDetails,
                       objective: objective,
                       totalExperience: totalExperience,
                       workSummaries: workSummary,
                       skills: skills,
                       education: education,
-                      projects: projects)
+                      projects: projects,
+                      createdAt: Date())
     }
     
     func noOfRows(for section: Int) -> Int {

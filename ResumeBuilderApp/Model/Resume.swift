@@ -8,8 +8,8 @@
 import Foundation
 
 
-public struct Resume {
-   // let id: Int
+public struct Resume: Codable {
+    let id: UUID
     var profileImage: String?
     var personalDetails: PersonalDetails?
     var objective: String?
@@ -18,44 +18,23 @@ public struct Resume {
     var skills: [Skills]
     var education: [Education]
     var projects: [Project]
-    let createdDate: Date
-    
-    init(profileImage: String? = nil, personalDetails: PersonalDetails? = nil, objective: String? = nil, totalExperience: String? = nil, workSummaries: [WorkSummary] = [], skills: [Skills] = [], education: [Education] = [], projects: [Project] = []) {
-       // self.id = id
-        self.profileImage = profileImage
-        self.personalDetails = personalDetails
-        self.objective = objective
-        self.totalExperience = totalExperience
-        self.workSummaries = workSummaries
-        self.skills = skills
-        self.education = education
-        self.projects = projects
-        self.createdDate = Date()
-    }
-    
+    let createdAt: Date
 }
 
-public struct PersonalDetails {
+public struct PersonalDetails: Codable {
     var name: String?
     var address: String?
     var email: String?
     var phone: String?
-    
-    init(name: String? = nil, address: String? = nil, email: String? = nil, phone: String? = nil) {
-        self.name = name
-        self.address = address
-        self.email = email
-        self.phone = phone
-    }
 }
 
-public struct WorkSummary {
+public struct WorkSummary: Codable {
     let id: Int
     var companyName: String?
     var duration: String?
 }
 
-public struct Education {
+public struct Education: Codable {
     let id: Int
     var instituteName: String?
     var course: String?
@@ -63,31 +42,18 @@ public struct Education {
     var cgpa: String?
 }
 
-public struct Skills {
+public struct Skills: Codable {
     let id: Int
     let name: String?
 }
 
-public struct Project {
+public struct Project: Codable {
     let id: Int
     var projectName: String?
     var teamSize: String?
     var role: String?
     var technologyUsed: String?
     var summury: String?
-    init(id: Int,
-    projectName: String? = nil,
-     teamSize: String? = nil,
-     role: String? = nil,
-     technologyUsed: String? = nil,
-     summury: String? = nil) {
-        self.id = id
-        self.projectName = projectName
-        self.teamSize = teamSize
-        self.role = role
-        self.technologyUsed = technologyUsed
-        self.summury = summury
-    }
 }
 
 

@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let dependencies = ModuleDependencies(localDataService: CoreDataManager.shareInstance)
+        let dependencies = ModuleDependencies(localDataService: LocalDataManager.shareInstance)
         let vc = Module(dependencies: dependencies).makeRootViewController()
         let navigationViewController = UINavigationController(rootViewController: vc)
         window?.rootViewController = navigationViewController
