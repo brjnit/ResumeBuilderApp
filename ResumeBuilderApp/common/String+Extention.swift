@@ -1,22 +1,12 @@
 //
-//  UIImage+Extention.swift
+//  String+Extentions.swift
 //  ResumeBuilderApp
 //
-//  Created by Brajesh Kumar on 17/03/22.
+//  Created by Brajesh Kumar on 20/03/22.
 //
 
 import UIKit
 
-
-extension UIImageView {
-    func makeRounded() {
-        layer.borderWidth = 1
-        layer.masksToBounds = false
-        layer.borderColor = UIColor.black.cgColor
-        layer.cornerRadius = frame.height/2
-        clipsToBounds = true
-    }
-}
 extension String {
     
     func decodeBase64StringToImage() -> UIImage? {
@@ -37,14 +27,6 @@ extension String {
     }
 }
 
-extension UITableViewCell {
-    func addShadow(){
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOpacity = 0.5
-        self.layer.shadowRadius = 2.0
-        self.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-    }
-}
 
 extension Date {
     var formatedDate : String {
@@ -53,13 +35,3 @@ extension Date {
         return dateFormatter.string(from: self)
     }
 }
-
-extension UIViewController {
-    func showAlert(title: String? = nil, message: String ) {
-        let alertVc = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertVc.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-        present(alertVc, animated: true, completion: nil)
-    }
-}
-
-
