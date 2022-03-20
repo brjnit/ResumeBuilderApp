@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SectionFooterView" customModule="ResumeBuilderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="678" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PEK-FK-1FG">
+                    <rect key="frame" x="0.0" y="0.0" width="678" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QC5-QX-frH">
+                            <rect key="frame" x="0.0" y="0.0" width="339" height="60"/>
+                            <color key="tintColor" systemColor="systemTealColor"/>
+                            <state key="normal" title="Add" image="plus" catalog="system">
+                                <color key="titleColor" systemColor="systemTealColor"/>
+                            </state>
+                            <connections>
+                                <action selector="addAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="KBI-Zz-DGk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEx-iP-M1R">
+                            <rect key="frame" x="339" y="0.0" width="339" height="60"/>
+                            <color key="tintColor" systemColor="systemTealColor"/>
+                            <state key="normal" title="Save">
+                                <color key="titleColor" systemColor="systemTealColor"/>
+                            </state>
+                            <connections>
+                                <action selector="saveAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="GKZ-vF-tXA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PEK-FK-1FG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4LY-Kx-DoJ"/>
+                <constraint firstAttribute="bottom" secondItem="PEK-FK-1FG" secondAttribute="bottom" id="FMO-HR-tkZ"/>
+                <constraint firstAttribute="trailing" secondItem="PEK-FK-1FG" secondAttribute="trailing" id="xrE-ic-Shq"/>
+                <constraint firstItem="PEK-FK-1FG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zJp-Dl-4vU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addButton" destination="QC5-QX-frH" id="sf1-yd-mPx"/>
+                <outlet property="saveButton" destination="AEx-iP-M1R" id="OwW-CF-XyW"/>
+            </connections>
+            <point key="canvasLocation" x="-457.97101449275368" y="-202.90178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

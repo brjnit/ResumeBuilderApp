@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectTableViewCell" rowHeight="448" id="KGk-i7-Jjw" customClass="ProjectTableViewCell" customModule="ResumeBuilderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="753" height="448"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="753" height="448"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aqr-gY-llr">
+                        <rect key="frame" x="0.0" y="0.0" width="753" height="430"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBg-4H-o2Z" customClass="LabelTextFieldView" customModule="ResumeBuilderApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="753" height="92"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="LGR-nN-R76"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Du4-Ex-xaD" customClass="LabelTextFieldView" customModule="ResumeBuilderApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="753" height="92"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="N5q-Mg-eQW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZW-Ub-AGE">
+                                <rect key="frame" x="0.0" y="184" width="753" height="92"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2ud-Ce-X9D">
+                                        <rect key="frame" x="0.0" y="0.0" width="753" height="92"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5i-ng-5h8" customClass="LabelTextFieldView" customModule="ResumeBuilderApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="376.5" height="92"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCQ-Ye-VJk" customClass="LabelTextFieldView" customModule="ResumeBuilderApp" customModuleProvider="target">
+                                                <rect key="frame" x="376.5" y="0.0" width="376.5" height="92"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2ud-Ce-X9D" secondAttribute="trailing" id="4vG-2k-kEC"/>
+                                    <constraint firstAttribute="height" constant="92" id="AGe-Bo-L1n"/>
+                                    <constraint firstItem="2ud-Ce-X9D" firstAttribute="leading" secondItem="uZW-Ub-AGE" secondAttribute="leading" id="E8t-Kf-3JF"/>
+                                    <constraint firstAttribute="bottom" secondItem="2ud-Ce-X9D" secondAttribute="bottom" id="YEb-q7-BGf"/>
+                                    <constraint firstItem="2ud-Ce-X9D" firstAttribute="top" secondItem="uZW-Ub-AGE" secondAttribute="top" id="YIN-1S-FKP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjA-fo-rpo" customClass="LabelWithTextView" customModule="ResumeBuilderApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="276" width="753" height="154"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="430" id="nyi-hm-Zsv"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aqr-gY-llr" secondAttribute="bottom" id="34x-QQ-Jey"/>
+                    <constraint firstItem="aqr-gY-llr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dwF-Mp-n1t"/>
+                    <constraint firstAttribute="trailing" secondItem="aqr-gY-llr" secondAttribute="trailing" id="rkk-cj-hUn"/>
+                    <constraint firstItem="aqr-gY-llr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yaN-sw-NSU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="projectNameView" destination="aBg-4H-o2Z" id="7za-kS-XYY"/>
+                <outlet property="roleView" destination="KCQ-Ye-VJk" id="Feq-hH-mnc"/>
+                <outlet property="summuryView" destination="qjA-fo-rpo" id="vYe-CW-8tl"/>
+                <outlet property="teamSizeView" destination="c5i-ng-5h8" id="eqe-pd-Rrc"/>
+                <outlet property="technologyUsedView" destination="Du4-Ex-xaD" id="zqA-IP-0GD"/>
+            </connections>
+            <point key="canvasLocation" x="-176.08695652173915" y="-12.723214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
