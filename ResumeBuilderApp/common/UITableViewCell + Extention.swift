@@ -15,3 +15,12 @@ extension UITableViewCell {
         self.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
     }
 }
+
+extension UIView {
+    func addDropShadow(){
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowRadius = 2.0
+        self.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+    }
+}

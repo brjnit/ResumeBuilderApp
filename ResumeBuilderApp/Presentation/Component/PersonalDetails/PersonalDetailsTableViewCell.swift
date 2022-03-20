@@ -49,6 +49,7 @@ class PersonalDetailsTableViewCell: UITableViewCell {
         emailView.textField.tag = 2
         phoneView.textField.tag = 3
         phoneView.textField.keyboardType = .numberPad
+        self.addDropShadow()
     }
     
 }
