@@ -40,11 +40,9 @@
 		4FE7BC1B27D71D260021C8CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BC1927D71D260021C8CE /* LaunchScreen.storyboard */; };
 		4FE7BC2627D71D260021C8CE /* ResumeBuilderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC2527D71D260021C8CE /* ResumeBuilderAppTests.swift */; };
 		4FE7BC3127D71D260021C8CE /* ResumeBuilderAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC3027D71D260021C8CE /* ResumeBuilderAppUITests.swift */; };
-		4FE7BC4827D774A20021C8CE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC4727D774A20021C8CE /* CustomTextField.swift */; };
 		4FE7BC5527D7B6810021C8CE /* LabelTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BC5427D7B6810021C8CE /* LabelTextFieldView.xib */; };
 		4FE7BC5A27D7B6930021C8CE /* LabelTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC5927D7B6930021C8CE /* LabelTextFieldView.swift */; };
 		4FE7BC5F27D7C6780021C8CE /* LabelWithTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC5E27D7C6780021C8CE /* LabelWithTextView.swift */; };
-		4FE7BC6427D7C7400021C8CE /* UIView+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC6327D7C7400021C8CE /* UIView+Extentions.swift */; };
 		4FE7BC6F27D87BCF0021C8CE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC6E27D87BCF0021C8CE /* ProfileViewController.swift */; };
 		4FE7BC8627D87C440021C8CE /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC8527D87C440021C8CE /* PreviewViewController.swift */; };
 		4FE7BC9127D888C90021C8CE /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC9027D888C90021C8CE /* ProfileTableViewCell.swift */; };
@@ -60,8 +58,6 @@
 		4FE7BCDF27D9DDC50021C8CE /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BCDE27D9DDC50021C8CE /* SectionHeaderView.xib */; };
 		4FE7BCE827D9F5A50021C8CE /* PersonalDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BCE627D9F5A50021C8CE /* PersonalDetailsTableViewCell.swift */; };
 		4FE7BCE927D9F5A50021C8CE /* PersonalDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BCE727D9F5A50021C8CE /* PersonalDetailsTableViewCell.xib */; };
-		4FE7BCEE27DA0C8D0021C8CE /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BCED27DA0C8D0021C8CE /* SectionFooterView.swift */; };
-		4FE7BCF327DA0CBE0021C8CE /* SectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BCF227DA0CBE0021C8CE /* SectionFooterView.xib */; };
 		4FE7BD0127DA30320021C8CE /* SkillsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BD0027DA30320021C8CE /* SkillsCellViewModel.swift */; };
 		4FE7BD0627DA30480021C8CE /* ProjectsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BD0527DA30480021C8CE /* ProjectsCellViewModel.swift */; };
 		4FE7BD0B27DA305E0021C8CE /* EducationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BD0A27DA305E0021C8CE /* EducationCellViewModel.swift */; };
@@ -128,11 +124,9 @@
 		4FE7BC2C27D71D260021C8CE /* ResumeBuilderAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeBuilderAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE7BC3027D71D260021C8CE /* ResumeBuilderAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeBuilderAppUITests.swift; sourceTree = "<group>"; };
 		4FE7BC3227D71D260021C8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FE7BC4727D774A20021C8CE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4FE7BC5427D7B6810021C8CE /* LabelTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTextFieldView.xib; sourceTree = "<group>"; };
 		4FE7BC5927D7B6930021C8CE /* LabelTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextFieldView.swift; sourceTree = "<group>"; };
 		4FE7BC5E27D7C6780021C8CE /* LabelWithTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithTextView.swift; sourceTree = "<group>"; };
-		4FE7BC6327D7C7400021C8CE /* UIView+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extentions.swift"; sourceTree = "<group>"; };
 		4FE7BC6E27D87BCF0021C8CE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4FE7BC8527D87C440021C8CE /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		4FE7BC9027D888C90021C8CE /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
@@ -148,8 +142,6 @@
 		4FE7BCDE27D9DDC50021C8CE /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		4FE7BCE627D9F5A50021C8CE /* PersonalDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		4FE7BCE727D9F5A50021C8CE /* PersonalDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalDetailsTableViewCell.xib; sourceTree = "<group>"; };
-		4FE7BCED27DA0C8D0021C8CE /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
-		4FE7BCF227DA0CBE0021C8CE /* SectionFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionFooterView.xib; sourceTree = "<group>"; };
 		4FE7BD0027DA30320021C8CE /* SkillsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsCellViewModel.swift; sourceTree = "<group>"; };
 		4FE7BD0527DA30480021C8CE /* ProjectsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsCellViewModel.swift; sourceTree = "<group>"; };
 		4FE7BD0A27DA305E0021C8CE /* EducationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationCellViewModel.swift; sourceTree = "<group>"; };
@@ -332,13 +324,9 @@
 				4FE7BCFC27DA2F130021C8CE /* Objective */,
 				4FE7BCFB27DA2EF50021C8CE /* SectionHeader */,
 				4FE7BCF727DA2EC90021C8CE /* PersonalDetails */,
-				4FE7BC4727D774A20021C8CE /* CustomTextField.swift */,
 				4FE7BC5427D7B6810021C8CE /* LabelTextFieldView.xib */,
 				4FE7BC5927D7B6930021C8CE /* LabelTextFieldView.swift */,
 				4FE7BC5E27D7C6780021C8CE /* LabelWithTextView.swift */,
-				4FE7BC6327D7C7400021C8CE /* UIView+Extentions.swift */,
-				4FE7BCED27DA0C8D0021C8CE /* SectionFooterView.swift */,
-				4FE7BCF227DA0CBE0021C8CE /* SectionFooterView.xib */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -540,7 +528,6 @@
 				4FE7BC5527D7B6810021C8CE /* LabelTextFieldView.xib in Resources */,
 				4F4D660A27DC69C3006A0F46 /* ExperienceTableViewCell.xib in Resources */,
 				4F4D666127E51835006A0F46 /* ProjectView.xib in Resources */,
-				4FE7BCF327DA0CBE0021C8CE /* SectionFooterView.xib in Resources */,
 				4F4D664D27E50F77006A0F46 /* EductionView.xib in Resources */,
 				4FE7BCCE27D9DACF0021C8CE /* ProjectTableViewCell.xib in Resources */,
 				4F4D65F927DC66D2006A0F46 /* WorkSummaryTableViewCell.xib in Resources */,
@@ -600,7 +587,6 @@
 				4F4D668527E74A7C006A0F46 /* LocalDataService.swift in Sources */,
 				4F4D665227E50F89006A0F46 /* EductionView.swift in Sources */,
 				4FE7BC6F27D87BCF0021C8CE /* ProfileViewController.swift in Sources */,
-				4FE7BC6427D7C7400021C8CE /* UIView+Extentions.swift in Sources */,
 				4FE7BC5F27D7C6780021C8CE /* LabelWithTextView.swift in Sources */,
 				4F4D663E27E33F93006A0F46 /* UIImage+Extention.swift in Sources */,
 				4F4D668D27E74AA1006A0F46 /* ResumeRepository.swift in Sources */,
@@ -610,7 +596,6 @@
 				4F4D667127E747FC006A0F46 /* UITableViewCell + Extention.swift in Sources */,
 				4F4D664327E4AB4E006A0F46 /* WorkSummaryCellViewModel.swift in Sources */,
 				4F4D667F27E74822006A0F46 /* UIViewController+Extention.swift in Sources */,
-				4FE7BCEE27DA0C8D0021C8CE /* SectionFooterView.swift in Sources */,
 				4FE7BCAC27D913040021C8CE /* SkillTableViewCell.swift in Sources */,
 				4F4D65DB27DBC1C0006A0F46 /* Module.swift in Sources */,
 				4FE7BCD427D9DAF40021C8CE /* ObjectiveTableViewCell.swift in Sources */,
@@ -618,7 +603,6 @@
 				4FE7BD2127DB3F0C0021C8CE /* CoreDataManager.swift in Sources */,
 				4FE7BC8627D87C440021C8CE /* PreviewViewController.swift in Sources */,
 				4FE7BD1027DA30740021C8CE /* ObjectiveCellViewModel.swift in Sources */,
-				4FE7BC4827D774A20021C8CE /* CustomTextField.swift in Sources */,
 				4F4D665C27E5168D006A0F46 /* WorkSummaryView.swift in Sources */,
 				4F4D662B27E246F5006A0F46 /* PreviewViewModel.swift in Sources */,
 			);

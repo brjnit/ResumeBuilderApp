@@ -29,17 +29,17 @@ class MainFlowCoordinator {
     func navigateToCreateResume() {
         let closures = ProfileClosures(navigateToPreview: navigateToPreview)
         let vc = dependencies.makeProfileViewController(closures: closures, resume: nil)
-        mainViewController?.navigationController?.pushViewController(vc, animated: false)
+        mainViewController?.navigationController?.pushViewController(vc, animated: true)
     }
     
     func navigateToPreview(resume: Resume) {
         let vc = dependencies.makePreviewViewController(resume: resume)
-        mainViewController?.navigationController?.pushViewController(vc, animated: false)
+        mainViewController?.navigationController?.pushViewController(vc, animated: true)
     }
     
     func navigateToEditResume(resume: Resume) {
         let closures = ProfileClosures(navigateToPreview: navigateToPreview)
         let vc = dependencies.makeProfileViewController(closures: closures, resume: resume)
-        mainViewController?.navigationController?.pushViewController(vc, animated: false)
+        mainViewController?.navigationController?.pushViewController(vc, animated: true)
     }
 }

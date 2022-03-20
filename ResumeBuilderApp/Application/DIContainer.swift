@@ -24,6 +24,7 @@ extension DIContainer: FlowCoordinatorDependencies {
         let repository = DefaultResumeRepository(service: dependencies.localDataService)
         vc.viewModel = ChooseProfileViewModel(repository: repository, closures: closures)
         vc.navigationItem.title = "Choose Profile"
+        vc.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         return vc
     }
     

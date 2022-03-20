@@ -32,7 +32,6 @@ class MainViewController: UIViewController {
         }
     }
     
-    
     @IBAction func createNewResumeAction(_ sender: Any) {
         viewModel.createNewResume()
     }
@@ -56,9 +55,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     
 }
-
-extension MainViewController: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        viewController.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
-    }
-}
+//
+//extension MainViewController: UINavigationControllerDelegate {
+//    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+//        viewController.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+//    }
+//}
