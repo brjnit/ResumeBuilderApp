@@ -40,7 +40,7 @@ extension ExperienceTableViewCell: UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let maxLength = 3
-        return range.location < maxLength - 1
+        let maxLength = 4
+        return range.location < maxLength
     }
 }

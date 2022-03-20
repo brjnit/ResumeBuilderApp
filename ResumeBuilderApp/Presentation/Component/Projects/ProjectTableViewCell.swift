@@ -95,7 +95,7 @@ extension ProjectTableViewCell: UITextViewDelegate, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField.tag == 1 {
             let maxLength = 3
-            return range.location < maxLength - 1
+            return range.location < maxLength
         }
         return true
     }

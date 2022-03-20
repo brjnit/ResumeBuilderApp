@@ -25,11 +25,6 @@ class MainViewController: UIViewController {
         viewModel.didUpdate = { [weak self]  in
             self?.tableView.reloadData()
         }
-        viewModel.didFail = { [weak self]  in
-            DispatchQueue.main.async { [weak self] in
-              // self?.showAlert(message : self?.viewModel.errorMessage ?? "")
-            }
-        }
     }
     
     @IBAction func createNewResumeAction(_ sender: Any) {
@@ -55,9 +50,3 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     
 }
-//
-//extension MainViewController: UINavigationControllerDelegate {
-//    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-//        viewController.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
-//    }
-//}
