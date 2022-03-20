@@ -22,11 +22,11 @@ class MainFlowCoordinator {
     }
     
     func start() {
-        let closures = ChooseProfileClosures(createResume: createResume, navigateToEditResume: navigateToEditResume)
+        let closures = ChooseProfileClosures(navigateToCreateResume: navigateToCreateResume, navigateToEditResume: navigateToEditResume)
         mainViewController = dependencies.makeMainViewController(closures: closures)
     }
     
-    func createResume() {
+    func navigateToCreateResume() {
         let closures = ProfileClosures(navigateToPreview: navigateToPreview)
         let vc = dependencies.makeProfileViewController(closures: closures, resume: nil)
         mainViewController?.navigationController?.pushViewController(vc, animated: false)

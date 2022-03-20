@@ -39,7 +39,7 @@ class ChooseProfileViewModel {
     }
     
     func createNewResume() {
-        closures.createResume()
+        closures.navigateToCreateResume()
     }
     
     func didSelectRow(for indexPath: IndexPath) {
@@ -50,6 +50,6 @@ class ChooseProfileViewModel {
 }
 
 struct ChooseProfileClosures {
-    var createResume: ()->Void
+    var navigateToCreateResume: ()->Void
     var navigateToEditResume: (Resume)->Void
 }
