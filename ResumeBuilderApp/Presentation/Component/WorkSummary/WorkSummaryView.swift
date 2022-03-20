@@ -27,13 +27,13 @@ class WorkSummaryView: UIView {
         initSubViews()
     }
     
-    func initSubViews() {
+    private func initSubViews() {
         UINib(nibName: "WorkSummaryView", bundle: nil).instantiate(withOwner: self, options: nil)
         contentView.frame = bounds
         addSubview(contentView)
     }
     
-    private func configure(with workSummary: WorkSummary) {
+    func configure(with workSummary: WorkSummary) {
         comapanyLabel.text = workSummary.companyName
         durationLabel.text = workSummary.duration
     }
