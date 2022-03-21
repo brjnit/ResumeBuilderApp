@@ -13,6 +13,7 @@ User information fields are:
   User can create, view and delete their resume.
   
   //Future planning features
+  
   1.Capture resume View sreen and convert it to PDF. User can download his resume in PDF format
   2.saving of resumes on core data or API to improve app performance.
   
