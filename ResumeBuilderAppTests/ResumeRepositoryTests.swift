@@ -43,7 +43,7 @@ class ResumeRepositoryTests: XCTestCase {
         let sut = makeSUT(with: resume, isSuccess: true)
         let expectation = self.expectation(description: "load resume successfully")
         sut.save(resume) { (_) in
-           // 
+           //
         }
         var expectedResume: Resume?
         sut.load(from: resume.id.uuidString, with: { result in
@@ -72,6 +72,90 @@ class ResumeRepositoryTests: XCTestCase {
             expectation.fulfill()
             switch result {
             case .success: XCTFail("load resume should not success")
+            case .failure: isError = true
+            }
+            
+        })
+        waitForExpectations(timeout: 2, handler: nil)
+        XCTAssertTrue(isError)
+    }
+    
+    func test_loadAllResumeWithSuccess() {
+        let resume: Resume = Resume(id: UUID(), profileImage: nil, personalDetails: PersonalDetails(name: "Brajesh", address: "Patna", email: "brjnit2009@gmail.com", phone: "9703588647"), objective: nil, totalExperience: nil, workSummaries: [], skills: [], education: [], projects: [], createdAt: Date())
+        let sut = makeSUT(with: resume, isSuccess: true)
+        let expectation = self.expectation(description: "load all resume successfully")
+        sut.save(resume) { (_) in
+           //
+        }
+        var expectedResume: [Resume] = []
+        sut.loadAll(with: { result in
+            switch result {
+            case .success(let response): expectedResume = response
+            case .failure: XCTFail("load all resume failed")
+            }
+            expectation.fulfill()
+            
+        })
+       
+        waitForExpectations(timeout: 3, handler: nil)
+        XCTAssertEqual(expectedResume.count, 1)
+    }
+    
+    func test_loadAllResumeWithFailure() {
+        let resume: Resume = Resume(id: UUID(), profileImage: nil, personalDetails: PersonalDetails(name: "Brajesh", address: "Patna", email: "brjnit2009@gmail.com", phone: "9703588647"), objective: nil, totalExperience: nil, workSummaries: [], skills: [], education: [], projects: [], createdAt: Date())
+        let sut = makeSUT(with: resume, isSuccess: false)
+        let expectation = self.expectation(description: "load all resume failed")
+      
+        sut.save(resume) { (_) in
+            //
+        }
+        var isError: Bool = false
+        sut.load(from: UUID().uuidString, with: { result in
+            expectation.fulfill()
+            switch result {
+            case .success: XCTFail("load all resume should not success")
+            case .failure: isError = true
+            }
+            
+        })
+        waitForExpectations(timeout: 2, handler: nil)
+        XCTAssertTrue(isError)
+    }
+    
+    func test_deleteResumeWithSuccess() {
+        let resume: Resume = Resume(id: UUID(), profileImage: nil, personalDetails: PersonalDetails(name: "Brajesh", address: "Patna", email: "brjnit2009@gmail.com", phone: "9703588647"), objective: nil, totalExperience: nil, workSummaries: [], skills: [], education: [], projects: [], createdAt: Date())
+        let sut = makeSUT(with: resume, isSuccess: true)
+        let expectation = self.expectation(description: "delete resume successfully")
+        sut.save(resume) { (_) in
+           //
+        }
+        var isSuccess: Bool = false
+        sut.delete(from: resume.id.uuidString, with: { result in
+            switch result {
+            case .success: isSuccess = true
+            case .failure: XCTFail("delete resume failed")
+            }
+            expectation.fulfill()
+            
+        })
+       
+        waitForExpectations(timeout: 3, handler: nil)
+        XCTAssertTrue(isSuccess)
+    }
+    
+    func test_deleteResumeWithFailure() {
+        let resume: Resume = Resume(id: UUID(), profileImage: nil, personalDetails: PersonalDetails(name: "Brajesh", address: "Patna", email: "brjnit2009@gmail.com", phone: "9703588647"), objective: nil, totalExperience: nil, workSummaries: [], skills: [], education: [], projects: [], createdAt: Date())
+        let sut = makeSUT(with: resume, isSuccess: false)
+        let expectation = self.expectation(description: "delete resume failed")
+      
+        sut.save(resume) { (_) in
+            //
+        }
+        var isError: Bool = false
+        sut.delete(from: UUID().uuidString, with: { result in
+            expectation.fulfill()
+            switch result {
+            case .success: XCTFail("delete resume should not success")
             case .failure: isError = true
             }
             
