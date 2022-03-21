@@ -39,7 +39,6 @@
 		4FE7BC1627D71D1E0021C8CE /* ResumeBuilderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC1427D71D1E0021C8CE /* ResumeBuilderApp.xcdatamodeld */; };
 		4FE7BC1827D71D260021C8CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BC1727D71D260021C8CE /* Assets.xcassets */; };
 		4FE7BC1B27D71D260021C8CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BC1927D71D260021C8CE /* LaunchScreen.storyboard */; };
-		4FE7BC2627D71D260021C8CE /* ResumeBuilderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC2527D71D260021C8CE /* ResumeBuilderAppTests.swift */; };
 		4FE7BC3127D71D260021C8CE /* ResumeBuilderAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC3027D71D260021C8CE /* ResumeBuilderAppUITests.swift */; };
 		4FE7BC5527D7B6810021C8CE /* LabelTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BC5427D7B6810021C8CE /* LabelTextFieldView.xib */; };
 		4FE7BC5A27D7B6930021C8CE /* LabelTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC5927D7B6930021C8CE /* LabelTextFieldView.swift */; };
@@ -121,7 +120,6 @@
 		4FE7BC1A27D71D260021C8CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FE7BC1C27D71D260021C8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FE7BC2127D71D260021C8CE /* ResumeBuilderAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeBuilderAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FE7BC2527D71D260021C8CE /* ResumeBuilderAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeBuilderAppTests.swift; sourceTree = "<group>"; };
 		4FE7BC2727D71D260021C8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FE7BC2C27D71D260021C8CE /* ResumeBuilderAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeBuilderAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE7BC3027D71D260021C8CE /* ResumeBuilderAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeBuilderAppUITests.swift; sourceTree = "<group>"; };
@@ -300,7 +298,6 @@
 		4FE7BC2427D71D260021C8CE /* ResumeBuilderAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				4FE7BC2527D71D260021C8CE /* ResumeBuilderAppTests.swift */,
 				4FE7BC2727D71D260021C8CE /* Info.plist */,
 				4F4D66A627E84730006A0F46 /* ResumeRepositoryTests.swift */,
 			);
@@ -616,7 +613,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F4D66A727E84730006A0F46 /* ResumeRepositoryTests.swift in Sources */,
-				4FE7BC2627D71D260021C8CE /* ResumeBuilderAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
