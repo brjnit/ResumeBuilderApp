@@ -25,6 +25,10 @@ class MainViewController: UIViewController {
         viewModel.didUpdate = { [weak self]  in
             self?.tableView.reloadData()
         }
+        
+        viewModel.didFail = { [weak self] errorMessage in
+            self?.showAlert(message: errorMessage)
+        }
     }
     
     @IBAction func createNewResumeAction(_ sender: Any) {

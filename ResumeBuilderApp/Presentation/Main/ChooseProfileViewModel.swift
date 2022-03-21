@@ -38,7 +38,7 @@ class ChooseProfileViewModel {
                     self?.resumes = response
                     self?.didUpdate?()
             case .failure(let error):
-                self?.didFail?(error.localizedDescription)
+                self?.didFail?(error.description)
             }
         })
     }

@@ -19,4 +19,13 @@ public enum FileError: Error {
     case cannotLoadFile
     case canNotRemove
     case parsingError
+    
+    var description: String {
+        switch self {
+        case .fileNotFound: return "file is not found in system"
+        case .cannotLoadFile: return "Error occured while loading the file."
+        case .canNotRemove: return "Error occured while removing"
+        case .parsingError: return "Error occured in json parsing"
+        }
+    }
 }

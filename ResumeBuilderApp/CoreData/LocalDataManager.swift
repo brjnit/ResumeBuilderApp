@@ -9,12 +9,11 @@ import UIKit
 import CoreData
 
 
-//Can handle saving of data usong core data or through API
-//for demo purpose and of limited understanding in relationship Core data I have handle using local cache
+//Can handle saving of data using core data or through API
+//For demo purpose and of limited understanding in Core data relationship, I have handle using file system.
 
 public class LocalDataManager: LocalDataService {
     static let shareInstance = LocalDataManager()
-    private var resumes: [Resume] = []
     
    fileprivate func getDocumentDirectory() -> URL {
         if let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {

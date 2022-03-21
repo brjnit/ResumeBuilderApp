@@ -57,7 +57,7 @@ class ProfileViewModel {
         repository.save(makeResume()) { [weak self]  result in
             switch result {
             case .success: self?.didUpdate?()
-            case .failure(let error): self?.didFail?(error.localizedDescription)
+            case .failure(let error): self?.didFail?(error.description)
             }
         }
     }
