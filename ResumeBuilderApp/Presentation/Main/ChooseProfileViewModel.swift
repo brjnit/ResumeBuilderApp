@@ -47,11 +47,21 @@ class ChooseProfileViewModel {
         closures.navigateToCreateResume()
     }
     
-    func didSelectRow(for indexPath: IndexPath) {
+    func onEditResume(for indexPath: IndexPath) {
         guard let resume = resumes?[indexPath.row] else { return }
         closures.navigateToEditResume(resume)
     }
-    
+    func onDeleteResume(for indexPath: IndexPath) {
+        guard let resume = resumes?[indexPath.row] else { return }
+        repository.delete(from: resume.id.uuidString, with: { [weak self]  result in
+            switch result {
+            case .success:
+                self?.fetchResumes()
+            case .failure(let error):
+                self?.didFail?(error.description)
+            }
+        })
+    }
 }
 
 struct ChooseProfileClosures {

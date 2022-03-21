@@ -15,6 +15,9 @@ class ProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var contactLabel: UILabel!
     @IBOutlet weak var updatedDateLabel: UILabel!
     
+    var onDelete: (()->Void)?
+    var onEdit: (()->Void)?
+    
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -28,6 +31,16 @@ class ProfileTableViewCell: UITableViewCell {
         updatedDateLabel.text = model.updatedDate
         
     }
+    
+    @IBAction func deleteAction(_ sender: Any) {
+        onDelete?()
+    }
+    
+    @IBAction func editAction(_ sender: Any) {
+        onEdit?()
+    }
+    
+    
 }
 
 struct ProfileCellModel {

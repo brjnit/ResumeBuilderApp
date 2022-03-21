@@ -45,12 +45,12 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ProfileTableViewCell.self), for: indexPath) as? ProfileTableViewCell,  let cellVm = viewModel.cellViewModel(for: indexPath) else { return UITableViewCell() }
         
         cell.configureCell(model: cellVm)
+        cell.onEdit = {[weak self] in
+            self?.viewModel.onEditResume(for: indexPath)
+        }
+        cell.onDelete = {[weak self] in
+            self?.viewModel.onDeleteResume(for: indexPath)
+        }
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.didSelectRow(for: indexPath)
-    }
-    
-    
+    }    
 }
