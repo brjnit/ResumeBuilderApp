@@ -708,5 +708,69 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CD165C9-B651-4FA0-BEFD-BFE6CB49112D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ResumeBuilderAppTests/ResumeRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "test_loadResumeWithSuccess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8DA7BDE2-47C1-457E-8990-243B829D7C60"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ResumeBuilderAppTests/ResumeRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "test_loadResumeWithSuccess()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8DA7BDE2-47C1-457E-8990-243B829D7C60 - cb573544e3e82472"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ResumeBuilderAppTests.ResumeRepositoryTests.test_loadResumeWithSuccess() -&gt; ()"
+                  moduleName = "ResumeBuilderAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brajeshkumar/Desktop/ResumeBuilderApp/ResumeBuilderAppTests/ResumeRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "1187">
+               </Location>
+               <Location
+                  uuid = "8DA7BDE2-47C1-457E-8990-243B829D7C60 - 5d8b1626a0638c57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;(), ResumeBuilderApp.FileError&gt;) -&gt; () in ResumeBuilderAppTests.ResumeRepositoryTests.test_loadResumeWithSuccess() -&gt; ()"
+                  moduleName = "ResumeBuilderAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brajeshkumar/Desktop/ResumeBuilderApp/ResumeBuilderAppTests/ResumeRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

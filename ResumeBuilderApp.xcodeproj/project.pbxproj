@@ -32,6 +32,7 @@
 		4F4D667F27E74822006A0F46 /* UIViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D667E27E74822006A0F46 /* UIViewController+Extention.swift */; };
 		4F4D668527E74A7C006A0F46 /* LocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D668427E74A7C006A0F46 /* LocalDataService.swift */; };
 		4F4D668D27E74AA1006A0F46 /* ResumeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D668C27E74AA1006A0F46 /* ResumeRepository.swift */; };
+		4F4D66A727E84730006A0F46 /* ResumeRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D66A627E84730006A0F46 /* ResumeRepositoryTests.swift */; };
 		4FE7BC0C27D71D1E0021C8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC0B27D71D1E0021C8CE /* AppDelegate.swift */; };
 		4FE7BC1027D71D1E0021C8CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7BC0F27D71D1E0021C8CE /* MainViewController.swift */; };
 		4FE7BC1327D71D1E0021C8CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7BC1127D71D1E0021C8CE /* Main.storyboard */; };
@@ -110,6 +111,7 @@
 		4F4D667E27E74822006A0F46 /* UIViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extention.swift"; sourceTree = "<group>"; };
 		4F4D668427E74A7C006A0F46 /* LocalDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataService.swift; sourceTree = "<group>"; };
 		4F4D668C27E74AA1006A0F46 /* ResumeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeRepository.swift; sourceTree = "<group>"; };
+		4F4D66A627E84730006A0F46 /* ResumeRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeRepositoryTests.swift; sourceTree = "<group>"; };
 		4FE7BC0827D71D1E0021C8CE /* ResumeBuilderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeBuilderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE7BC0B27D71D1E0021C8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FE7BC0F27D71D1E0021C8CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 			children = (
 				4FE7BC2527D71D260021C8CE /* ResumeBuilderAppTests.swift */,
 				4FE7BC2727D71D260021C8CE /* Info.plist */,
+				4F4D66A627E84730006A0F46 /* ResumeRepositoryTests.swift */,
 			);
 			path = ResumeBuilderAppTests;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F4D66A727E84730006A0F46 /* ResumeRepositoryTests.swift in Sources */,
 				4FE7BC2627D71D260021C8CE /* ResumeBuilderAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
